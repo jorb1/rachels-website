@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!--Standard browser formatting-->
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--Title and description-->
+    <title>Cosplay for Science | Science x Pop Culture | A Science Communication Initiative</title>   
+    <meta name="description" content="We are a coalition of scientists and educators changing how people engage with SCIENCE" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <!--CSS styling global fonts-->
+    <style>
+      :root {
+        --display-font: "Archivo Black", sans-serif;
+        --body-font: "DM Sans", sans-serif;
+      }
+
+      body {
+        font-family: var(--body-font);
+      }
+
+      h1, h2, h3, .font-display {
+        font-family: var(--display-font);
+      }
+
+      p, .font-body {
+        font-family: var(--body-font);
+      }
+    </style>
+
+    <!--Open graph (Facebook, Linkedin, Slack etc) improved handling-->
+    <meta property="og:title" content="Cosplay for Science | Science x Pop Culture – A Science Communication Initiative" />
+    <meta property="og:description" content="We are a coalition of scientists and educators changing how people engage with SCIENCE" />
+    <meta property="og:url" content="https://cosplayforscience.com" />
+    <meta property="og:site_name" content="C4S" />
+    <meta property="og:image" content="https://cosplayforscience.com/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:type" content="website" />
+
+    <!--Twitter improved handling-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Cosplay for Science | Science x Pop Culture – A Science Communication Initiative" />
+    <meta name="twitter:description" content="We are a coalition of scientists and educators changing how people engage with SCIENCE" />
+    <meta name="twitter:image" content="https://cosplayforscience.com/og.png" />
+
+    <!--Add Google analytics tag management later, here (googletagmanager.com)-->
+    
+    <!--Set icon for brower tab-->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+    <!--Browser tab color-->
+    <meta name="theme-color" content="#1769E8" />
+
+    <!--This is the canon site-->
+    <link rel="canonical" href="https://cosplayforscience.com" />
+
+
+
+  </head>
+
+  <body>
+
+    <!--Schema compliant search engine boost-->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "C4S",
+        "url": "https://cosplayforscience.com",
+        "description": "We are a coalition of scientists and educators changing how people engage with SCIENCE",
+        "slogan": "Join the Guild"
+      }
+    </script>
+
+    <!--Search engine boost for FAQs-->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+          "@type": "Question",
+          "name": "What is Cosplay for Science?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cosplay for Science is a science communication initiative created by four nerds who also happen to be scientists. As a scientists and educators, our goal is to reach our communities to foster science appreciation through the use of nerd and pop culture. We want to make science more relatable to our audience's everyday lives and interests. We want to make scientists more approachable and trustworthy. We want to create a community that acknowledges the importance of science and appreciates it as we do, all while having fun with it at the same time."
+          }
+        }, {
+          "@type": "Question",
+          "name": "What does Cosplay for Sciece do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Events (describe)."
+          }
+        }, {
+          "@type": "Question",
+          "name": "How does Cosplay for Science measure impact?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Describe some of Lisa's research here."
+          }
+        }, {
+          "@type": "Question",
+          "name": "How is Cosplay for Science funded?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Describe institutions, soft money like grants, and volunteering."
+          }
+        }, {
+          "@type": "Question",
+          "name": "Where can I find Cosplay for Science?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Describe how they can keep abreast of our events."
+          }
+        }, {
+          "@type": "Question",
+          "name": "I'm a scientist. How can I get involved with C4S?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Describe..."
+          }
+        }, {
+          "@type": "Question",
+          "name": "I'm a cosplayer. How can I get involved with C4S?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Describe..."
+          }
+        }, {
+          "@type": "Question",
+          "name": "I'm a cosplay and science enthusiast. How can I get involved with C4S?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Describe patreon, etc..."
+          }
+        }, {
+          "@type": "Question",
+          "name": "I am looking to expand my skillset. Do you have any advice on how I can get more into cosplaying and/or science?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Describe resources. Patreon?"
+          }
+        }]
+      }
+    </script>
+
+<!--CSS styling-->
+<style>
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+    background: #f6eedf;
+    color: #111111;
+  }
+
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #7C3AEC;
+    border-bottom: 3px solid #111111;
+  }
+
+  .hero-section {
+    width: 100%;
+    background: #7C3AEC;
+    color: #f6eedf;
+}
+
+  .hero-layout {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 64px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 24px;
+  }
+
+  .hero-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .eyebrow {
+    background: #f6eedf;
+    border: 3px solid #111111;
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    line-height: 1.4;
+    color: #111111;
+  }
+
+  .hero-title {
+    margin: 0;
+    font-family: "Archivo Black", sans-serif;
+    font-size: clamp(2.5rem, 7vw, 5rem);
+    line-height: 1.05;
+    color: #f6eedf;
+  }
+
+  .hero-text {
+    margin: 0;
+    max-width: 32rem;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #f6eedf;
+  }
+
+  .primary-button {
+    display: inline-block;
+    background: #E56750;
+    color: #111111;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 14px 24px;
+    border: 3px solid #111111;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 #111111;
+  }
+
+  .hero-visual {
+    position: relative;
+    width: 420px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .image-frame {
+    position: relative;
+    z-index: 2;
+    background: #f6eedf;
+    border: 5px solid #111111;
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow: 10px 10px 0 #111111;
+  }
+
+  .image-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .shape {
+    position: absolute;
+    pointer-events: none;
+    z-index: 3;
+    opacity: 0.95;
+  }
+
+  .shape-burst {
+    width: 120px;
+    height: 120px;
+    left: -28px;
+    top: 10px;
+  }
+
+  .shape-sparkle {
+    width: 110px;
+    height: 110px;
+    right: -24px;
+    bottom: 20px;
+  }
+
+  @media (max-width: 800px) {
+    .hero-layout {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-copy {
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  .header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .brand {
+    font-family: "Archivo Black", sans-serif;
+    font-size: 2rem;
+    color: #F6EEDF;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+  }
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .main-nav a {
+    color: #F6EEDF;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  .cta {
+    display: inline-block;
+    background: #C8E832;
+    color: #111111;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 12px 18px;
+    border: 3px solid #111111;
+    border-radius: 8px;
+    box-shadow: 4px 4px 0 #111111;
+  }
+
+  @media (max-width: 700px) {
+    .main-nav {
+      display: none;
+    }
+    .header-inner {
+      justify-content: space-between;
+    }
+  }
+
+    .hero-marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    background: #C8E832;
+    border-top: 3px solid #111111;
+    border-bottom: 3px solid #111111;
+    color: #111111;
+    padding: 10px 0;
+  }
+
+  .hero-marquee-track {
+    display: inline-flex;
+    align-items: center;
+    min-width: max-content;
+    white-space: nowrap;
+    animation: marquee 30s linear infinite;
+  }
+
+  .hero-marquee-content {
+    display: inline-block;
+    padding-right: 2rem;
+    font-size: 0.9rem;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+.what-we-do {
+  background: #f6eedf;
+  padding: 80px 24px;
+}
+
+.what-we-do h2 {
+  max-width: 700px;
+  margin: 0 0 16px;
+  font-family: "Archivo Black", sans-serif;
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  line-height: 1.1;
+}
+
+.what-we-do > p {
+  max-width: 700px;
+  margin: 0 0 32px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.card {
+  background: #f6eedf;
+  border: 3px solid #111111;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 6px 6px 0 #111111;
+}
+
+.card-yellow { background: #F5B83C; }
+.card-red { background: #E56750; }
+.card-teal { background: #7AE7D5; }
+.card-lime { background: #C8E832; }
+
+
+</style>
+
+ <!--Uppermost header layout-->
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/">C4S</a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="/about">About</a>
+      <a href="/programs">Programs</a>
+      <a href="/events">Events</a>
+      <a href="/resources">Resources</a>
+    </nav>
+
+    <a class="cta" href="https://www.patreon.com/cosplayforscience" target="_blank" rel="noopener noreferrer">
+      Support us
+    </a>
+  </div>
+</header>
+
+<!--Hero section layout-->
+<div class="hero-section">
+  <div class="hero-layout">
+    <div class="hero-copy">
+      <div class="eyebrow">
+        We are a coalition of scientists and educators changing how people engage with SCIENCE
+      </div>
+
+      <h1 class="hero-title">Science Superheros:</h1>
+
+      <p class="hero-text">
+        What science informs your favorite fandom?
+      </p>
+
+      <a class="primary-button" href="https://www.patreon.com/cosplayforscience" target="_blank" rel="noopener noreferrer">
+        Join the Alliance
+      </a>
+    </div>
+
+    <div class="hero-visual">
+      <svg class="shape shape-burst" viewBox="0 0 100 100" aria-hidden="true">
+        <polygon points="50,2 68,19 92,26 86,50 92,74 68,81 50,98 32,81 8,74 14,50 8,26 32,19" fill="#4B9FD3" />
+      </svg>
+
+      <svg class="shape shape-sparkle" viewBox="0 0 100 100" aria-hidden="true">
+        <path d="M 50,10 L 56,40 L 90,50 L 56,60 L 50,90 L 44,60 L 10,50 L 44,40 Z" fill="#1769E8" />
+      </svg>
+
+      <div class="image-frame">
+        <img src="c4s.png" alt="C4S logo image" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Banner layout-->
+<div class="hero-marquee" aria-label="C4S is for everyone">
+  <div class="hero-marquee-track">
+    <span class="hero-marquee-content">
+      PALEONTOLOGISTS • BIOLOGISTS • TEACHERS • GEOLOGISTS • CHEMISTS • PHYSICISTS • EDUCATORS • ARCHAEOLOGISTS • PSYCHOLOGISTS • SCIENTISTS • ANATOMISTS • MENTORS • NERDS •
+    </span>
+    <span class="hero-marquee-content" aria-hidden="true">
+      PALEONTOLOGISTS • BIOLOGISTS • TEACHERS • GEOLOGISTS • CHEMISTS • PHYSICISTS • EDUCATORS • ARCHAEOLOGISTS • PSYCHOLOGISTS • SCIENTISTS • ANATOMISTS • MENTORS • NERDS •
+    </span>
+  </div>
+</div>
+
+<!--What we do section-->
+
+<section class="what-we-do">
+  <h2>What does Cosplay for Science do?</h2>
+  <p>We use proven scientific communication methods to connect people to science using pop culture.</p>
+
+  <div class="card-grid">
+    <article class="card">
+      <span>01</span>
+      <h3>COMIC CONS</h3>
+      <p>Pop-up museums and informative panels featuring scientists discussing show science shapes peoples favorite fandoms.</p>
+    </article>
+
+    <article class="card">
+      <span>02</span>
+      <h3>COMMUNITY EVENTS</h3>
+      <p>Hands-on learning experiences and pop-up museums at libraries, botanic gardens, community centers, and more.</p>
+    </article>
+
+    <article class="card">
+      <span>03</span>
+      <h3>SPEAKER SERIES</h3>
+      <p>Our scientist travel for onsite lectures at schools, brewing companies, and more.</p>
+    </article>
+
+    <article class="card">
+      <span>04</span>
+      <h3>CONSULTING</h3>
+      <p>Our experts give advice and guidance for artists, movie makers, and creators looking to incorporate science content into their media.</p>
+    </article>
+  </div>
+</section>
